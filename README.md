@@ -1,11 +1,5 @@
 # photo synthesis
 development for sim 2 real 
-## 🎛 팀원별 담당 분야
-
-- 류한웅 :  PM              -  양원규 : 데이터분석 
-- 안희상 :  모델 애널리스트     -  허준호 : 데이터분석
-- 김언동 :  정신적 지주
-
 
 ---
 ## 요약
