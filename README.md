@@ -80,7 +80,7 @@ conetent 가중치 설명
 합성데이터를 바꾸는것 -> cost가 적다. -> cycle gan이나 neural style 바꿔서 조금더 좋은 품질인가? 더 realstic한 이미지가 도움이된다.
 
 ## Cycle Gan 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/96898057/172393501-7a137de4-29d3-42ce-9de9-38e3a57fc517.gif)![ezgif com-gif-maker](https://user-images.githubusercontent.com/96898057/172393522-ef717b4b-0b68-48ce-91dc-70c89095669d.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/96898057/172393501-7a137de4-29d3-42ce-9de9-38e3a57fc517.gif)![ezgif com-gif-maker](./gifs/overcast_resized.gif)
 
 
 
