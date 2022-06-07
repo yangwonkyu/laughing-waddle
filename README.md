@@ -80,8 +80,10 @@ conetent 가중치 설명
 합성데이터를 바꾸는것 -> cost가 적다. -> cycle gan이나 neural style 바꿔서 조금더 좋은 품질인가? 더 realstic한 이미지가 도움이된다.
 
 ## Cycle Gan 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/96898057/172393501-7a137de4-29d3-42ce-9de9-38e3a57fc517.gif)![ezgif com-gif-maker](./gifs/overcast_resized.gif)
-
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/96898057/172393501-7a137de4-29d3-42ce-9de9-38e3a57fc517.gif)![ezgif com-gif-maker](./gifs/overcast_resized.gif)<br>
+　　　　　　　　　　　　original  　　　　　　　　　　　　　　　　　　　　　　　　　 overcast<br><br>
+![fog](./gifs/foggy_resized.gif)![rain](./gifs/rain_resized.gif)<br>
+　　　　　　　　　　　　　fog 　　　　　　　　　　　　　　　　　　　　　　　　　　　　rain
 
 
 <details>
@@ -89,14 +91,12 @@ conetent 가중치 설명
 <div markdown="1">
 </div>
 </details>
+<br>
 
 ## Nerual Style Tranfer 
 
-![normal 20](https://user-images.githubusercontent.com/96898057/172377408-ae27f769-2bb4-407e-8989-969a4f999ddc.gif)![rain neural20](https://user-images.githubusercontent.com/96898057/172378068-0e5d78ea-3d48-40c6-a3fa-9b89c6b123a4.gif)
-
-
-
-
+![normal 20](https://user-images.githubusercontent.com/96898057/172377408-ae27f769-2bb4-407e-8989-969a4f999ddc.gif)![rain neural20](https://user-images.githubusercontent.com/96898057/172378068-0e5d78ea-3d48-40c6-a3fa-9b89c6b123a4.gif)<br>
+　　　　　　　　　　　　original 　　　　　　　　　　　　　　　　　　　　　　　　　　　rain<br>
 
 
   
@@ -183,27 +183,21 @@ conetent 가중치 설명
   이러한 일련의 과정들을 거쳐 image를 생성한다.
 ![image](https://user-images.githubusercontent.com/96898057/172288880-5fb82ea4-e951-41e0-91b4-0c518f7d27dd.png)
 
-  
+
+
   
 </div>
 </details> 
 
 
-
+<br>
 
 
 ---------------------------------------------------------------------------------
-2. Dataset
-  
-  -vkitti_2.0.3(vkitti_rgb(14Gb))
-  
-  -kitti_segmentation_map(1Gb)
-  
-  -kitti_rgb_1.3.1(15Gb)
-  
-  -kitti_rgb_2.0.3(8Gb)
-  
-  -kitti_vkitti_result_bdd
+2. 사용 Dataset
+  - vkitti_2.0.3(vkitti_rgb(14Gb))
+  - kitti_rgb_2015(8Gb)
+  - bdd100k
   
 ---------------------------------------------------------------------------------
 3. 진행도
@@ -216,12 +210,12 @@ yolov5을 vkitti 2.0.3의 일부분의 데이터를 가지고 시험적으로 �
 <details>
 <summary>yolov5m모델을 백본 네트워크로 사용</summary>
 <div markdown="1">
-    
-    [yolov5/yolov5m.yaml at master · ultralytics/yolov5](https://github.com/ultralytics/yolov5/blob/master/models/yolov5m.yaml)
-    
-    train.py  --img 1248 --batch 8 --epochs 300 --data '../datasets/vkitti2.0.3.yaml' --cfg 'models/yolov5m.yaml' --weights yolov5n.pt --name only_clone
-    
-    - input img size 640(default)에서 1248로 변경
+
+  [yolov5/yolov5m.yaml at master · ultralytics/yolov5](https://github.com/ultralytics/yolov5/blob/master/models/yolov5m.yaml)
+  
+  train.py  --img 1248 --batch 8 --epochs 300 --data '../datasets/vkitti2.0.3.yaml' --cfg 'models/yolov5m.yaml' --weights yolov5n.pt --name only_clone
+  
+  - input img size 640(default)에서 1248로 변경
   </div>
 </details> 
 <details>
@@ -275,6 +269,7 @@ yolov5을 vkitti 2.0.3의 일부분의 데이터를 가지고 시험적으로 �
  <details>
 <summary>yolov5n모델을 백본 네트워크로 사용</summary>
 <div markdown="1">
+
   [yolov5/yolov5n.yaml at master · ultralytics/yolov5](https://github.com/ultralytics/yolov5/blob/master/models/yolov5n.yaml)
 
 python train.py  --img 1248 --batch 32 --epochs 300 --data '../datasets/vkitti2.0.3.yaml' --cfg 'models/yolov5n.yaml' --weights yolov5n.pt --name only_clone
@@ -302,7 +297,8 @@ python train.py  --img 1248 --batch 32 --epochs 300 --data '../datasets/vkitti2.
   
  <details>
 <summary>detection 결과</summary>
-<div markdown="1">   
+<div markdown="1">  
+
   [test_result - Google Drive](https://drive.google.com/drive/folders/1sZngP_ysdRXxTWBZm32POl61barXxK8h?usp=sharing)
   </div>
 </details> 
@@ -319,13 +315,15 @@ python train.py  --img 1248 --batch 32 --epochs 300 --data '../datasets/vkitti2.
  <details>
 <summary>5월 17일</summary>
 <div markdown="1">
-![image](https://user-images.githubusercontent.com/96898057/172300912-08ecf1cc-423e-4f5d-949f-b2291d1181d7.png)
-![image](https://user-images.githubusercontent.com/96898057/172300955-882988ef-6d9f-490f-be7b-b4d48bb8e6fb.png)
-- yolov5l6 모델 사용 : yolov5x6모델은 하드웨어 메모리 부족으로 학습 불가
+
+  ![image](https://user-images.githubusercontent.com/96898057/172300912-08ecf1cc-423e-4f5d-949f-b2291d1181d7.png)
+  ![image](https://user-images.githubusercontent.com/96898057/172300955-882988ef-6d9f-490f-be7b-b4d48bb8e6fb.png)
+  - yolov5l6 모델 사용 : yolov5x6모델은 하드웨어 메모리 부족으로 학습 불가
   
  <details>
 <summary>yolov5l6모델을 백본 네트워크로 사용</summary>
 <div markdown="1">
+
   [yolov5/yolov5l6.yaml at master · ultralytics/yolov5](https://github.com/ultralytics/yolov5/blob/master/models/hub/yolov5l6.yaml)
 
 python train.py  --img 1280 --batch 8 --epochs 300 --data '../datasets/vkitti2.0.3.yaml' --cfg 'models/yolov5l6.yaml' --weights yolov5l6.pt --name only_clone_l6
@@ -339,18 +337,21 @@ python train.py  --img 1280 --batch 8 --epochs 300 --data '../datasets/vkitti2.0
 <summary>batch size는 8로  300 epoch 학습</summary>
 <div markdown="1"> 
   -아래는 train_batch 예시
+
   ![image](https://user-images.githubusercontent.com/96898057/172301207-5cc99794-ad17-4121-b544-9e0f37f8a8fa.png)
   </div>
 </details>
  <details>
 <summary>학습 결과</summary>
 <div markdown="1"> 
+
   ![image](https://user-images.githubusercontent.com/96898057/172301289-fee0d253-9457-42eb-ac54-d162977a4261.png)
   </div>
 </details>
  <details>
 <summary>detection 결과</summary>
 <div markdown="1">
+
   [test_result_l6 - Google Drive](https://drive.google.com/drive/folders/1B98K2GRVtaei3moXf61urC8gPZn5YEz5)
   </div>
 </details>
@@ -359,22 +360,7 @@ python train.py  --img 1280 --batch 8 --epochs 300 --data '../datasets/vkitti2.0
 
 
 
---------------------------------------------------------------
-  
-예상 되는 문제점과 더 생각해볼점
-- Neural Style Transfer를 사용하면서 어떻게 시간을 단축시킬 수 있을지
-- 어떻게 더 자연스러운 환경 이미지를 구축할 수 있을지
-- 
--
--
--
--
-- 합성데이터의 자동차에만 blur 정도를 적용시켜 DR 효과를 줄 수 있을까?
-
-
-
 ---
-
 # validation result 
 
 ## validation dataset
