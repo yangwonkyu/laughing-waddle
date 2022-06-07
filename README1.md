@@ -113,6 +113,7 @@ development by Photo synthesis
   ![image](https://user-images.githubusercontent.com/96898057/172286249-a3b02b87-cd1c-45bb-b9c7-0ce53d32db88.png)
   
   -Style loss
+  
   Style loss를 계산하는 것은 content loss에 비해 좀 더 어렵지만, 동일한 원칙을 따른다. 이번에는 신경망에 기본 input image와 style image를 입력으로 사용한다.
   
   기본 input image를 위한 style을 생성하려면, content image에서 기울기 하강(Gradient Descent)을 수행하여 원래 image의 style표현과 일치하는 image로 변환한다.
