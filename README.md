@@ -24,7 +24,7 @@ development by Photo synthesis
  ### yolov5 data agumentation 혹은 vkitti kitti 자체의 바운딩박스 규칙 또는 vkitti와 kitti의 데이터셋 안에 있는 occlusion된 상황만을 잘 인식 할 수도 있다.
  
 <details>
-<summary>Occlusion 문제가 잘 Detecting 되는 원인(가제) </summary>
+<summary>Occlusion 문제가 잘 Detecting 되는 이유 </summary>
 <div markdown="1">
 
 - Bag of freebies
@@ -93,7 +93,7 @@ conetent 가중치 설명
 </details>
 <br>
 
-## Nerual Style Tranfer 
+## Neural Style Transfer 
 
 ![normal 20](https://user-images.githubusercontent.com/96898057/172377408-ae27f769-2bb4-407e-8989-969a4f999ddc.gif)![rain neural20](https://user-images.githubusercontent.com/96898057/172378068-0e5d78ea-3d48-40c6-a3fa-9b89c6b123a4.gif)<br>
 　　　　　　　　　　　　original 　　　　　　　　　　　　　　　　　　　　　　rain<br>
