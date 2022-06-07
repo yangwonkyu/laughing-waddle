@@ -81,9 +81,9 @@ conetent 가중치 설명
 
 ## Cycle Gan 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/96898057/172393501-7a137de4-29d3-42ce-9de9-38e3a57fc517.gif)![ezgif com-gif-maker](./gifs/overcast_resized.gif)<br>
-　　　　　　　　　　　　original  　　　　　　　　　　　　　　　　　　　　　　　　　 overcast<br><br>
+　　　　　　　　　　　　original  　　　　　　　　　　　　　　　　　　　　 overcast<br><br>
 ![fog](./gifs/foggy_resized.gif)![rain](./gifs/rain_resized.gif)<br>
-　　　　　　　　　　　　　fog 　　　　　　　　　　　　　　　　　　　　　　　　　　　　rain
+　　　　　　　　　　　　　fog 　　　　　　　　　　　　　　　　　　　　　　　rain
 
 
 <details>
@@ -96,7 +96,7 @@ conetent 가중치 설명
 ## Nerual Style Tranfer 
 
 ![normal 20](https://user-images.githubusercontent.com/96898057/172377408-ae27f769-2bb4-407e-8989-969a4f999ddc.gif)![rain neural20](https://user-images.githubusercontent.com/96898057/172378068-0e5d78ea-3d48-40c6-a3fa-9b89c6b123a4.gif)<br>
-　　　　　　　　　　　　original 　　　　　　　　　　　　　　　　　　　　　　　　　　　rain<br>
+　　　　　　　　　　　　original 　　　　　　　　　　　　　　　　　　　　　　rain<br>
 
 
   
